@@ -5,8 +5,9 @@
     <project path="art" name="art" remote="xtended" />
     <project path="bionic" name="bionic" remote="xtended" />
     <project path="bootable/recovery" name="bootable_recovery" remote="xtended" />
+    <project path="development" name="development" remote="xtended" revision="xq-dev" />
     <project path="libcore" name="libcore"  remote="xtended" />
-    <project path="manifest" name="manifest" remote="xtended" />
+    <project path="manifest" name="manifest" remote="xtended" revision="xq-dev" />
     <project path="platform_testing" name="platform_testing" remote="xtended" />
 
     <!-- Build Repos -->
@@ -19,14 +20,14 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/soong" name="build_soong"  remote="xtended" >
+    <project path="build/soong" name="build_soong"  remote="xtended" revision="xq-dev">
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
     <project path="build/blueprint" name="build_blueprint" groups="pdk,tradefed" remote="xtended" />
 
     <!-- Device Repos -->
-    <project path="device/xtended/sepolicy" name="device_xtended_sepolicy" remote="xtended" />
+    <project path="device/xtended/sepolicy" name="device_xtended_sepolicy" remote="xtended" revision="xq-dev"/>
     <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="xtended" />
     <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="xtended" />
     <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xtended" />
@@ -37,8 +38,8 @@
     <project path="external/tinycompress" name="external_tinycompress" remote="xtended" />
 
     <!-- Framework Repos -->
-    <project path="frameworks/av" name="frameworks_av" remote="xtended" />
-    <project path="frameworks/base" name="frameworks_base" remote="xtended" />
+    <project path="frameworks/av" name="frameworks_av" remote="xtended" revision="xq-dev"/>
+    <project path="frameworks/base" name="frameworks_base" remote="xtended" revision="xq-dev"/>
     <project path="frameworks/native" name="frameworks_native" remote="xtended" />
     <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="xtended" />
     <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="xtended" />
@@ -47,7 +48,7 @@
     <project path="hardware/interfaces" name="hardware_interfaces" remote="xtended" />
     <project path="hardware/libhardware" name="hardware_libhardware" remote="xtended"  />
     <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="xtended" />
-    <project path="hardware/xtended/interfaces" name="hardware_xtended_interfaces" remote="xtended" />
+    <project path="hardware/xtended/interfaces" name="hardware_xtended_interfaces" remote="xtended" revision="xq-dev"/>
 
     <!-- Packages Repos -->
     <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="xtended" />
@@ -90,10 +91,9 @@
     <project path="system/netd" name="system_netd" remote="xtended" />
     <project path="system/sepolicy" name="system_sepolicy" remote="xtended" />
     <project path="system/update_engine" name="system_update_engine" remote="xtended" /> 
-    <project path="system/vold" name="system_vold" remote="xtended" />
+    <project path="system/vold" name="system_vold" remote="xtended" revision="xq-dev"/>
 
     <!-- Vendor Repo -->
-    <project path="vendor/xtended" name="vendor_xtended" remote="xtended" />
-    <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="xtended"/>
+    <project path="vendor/xtended" name="vendor_xtended" remote="xtended" revision="xq-dev"/>
 
 </manifest>
