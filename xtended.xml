@@ -19,11 +19,11 @@
     <project path="bootable/recovery" name="bootable_recovery" remote="xtended" />
     <project path="development" name="development" remote="xtended" />
     <project path="libcore" name="libcore"  remote="xtended" />
-    <project path="manifest" name="manifest" remote="xtended" />
+    <project path="manifest" name="manifest" remote="xtended" revision="xq-anp" />
     <project path="platform_testing" name="platform_testing" remote="xtended" />
 
     <!-- Build Repos -->
-    <project path="build/make" name="build" remote="xtended" >
+    <project path="build/make" name="build" remote="xtended" revision="xq-anp">
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -32,7 +32,7 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/soong" name="build_soong"  remote="xtended" >
+    <project path="build/soong" name="build_soong"  remote="xtended" revision="xq-anp">
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
@@ -50,8 +50,8 @@
     <project path="external/tinycompress" name="external_tinycompress" remote="xtended" />
 
     <!-- Framework Repos -->
-    <project path="frameworks/av" name="frameworks_av" remote="xtended" />
-    <project path="frameworks/base" name="frameworks_base" remote="xtended" />
+    <project path="frameworks/av" name="frameworks_av" remote="xtended" revision="xq-anp"/>
+    <project path="frameworks/base" name="frameworks_base" remote="xtended" revision="xq-anp"/>
     <project path="frameworks/native" name="frameworks_native" remote="xtended" />
     <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="xtended" />
     <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="xtended" />
@@ -76,7 +76,7 @@
     <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="xtended" />
     <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="xtended" />
     <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="xtended" />
-    <project path="packages/apps/Settings" name="packages_apps_Settings"  remote="xtended" />
+    <project path="packages/apps/Settings" name="packages_apps_Settings"  remote="xtended" revision="xq-anp" />
     <project path="packages/apps/Snap" name="packages_apps_Snap"  remote="xtended" />
     <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="xtended" />
     <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="xtended" />
@@ -95,7 +95,7 @@
     <project path="prebuilts/r8" name="prebuilts_r8" remote="xtended" clone-depth="1" />
 
     <!-- System Repos -->
-    <project path="system/bt" name="system_bt" remote="xtended" />
+    <project path="system/bt" name="system_bt" remote="xtended" revision="xq-anp" />
     <project path="system/bpf" name="system_bpf" remote="xtended" />
     <project path="system/core" name="system_core" remote="xtended" />
     <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="xtended" />
